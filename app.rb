@@ -22,8 +22,8 @@ get '/' do
   haml :index
 end
 
-get '/push' do
+post '/' do
   Pusher['test_channel'].trigger('my_event', {
-    'name' => 'foobar'
+    'text' => params[:text]
   })
 end

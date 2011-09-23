@@ -5,7 +5,12 @@
     %title Pusher
     %link{:rel => "stylesheet", :href => "/styles.css"}
     %script{:src => "http://js.pusherapp.com/1.9/pusher.min.js"}
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"}
     %script{:src => "/script.js"}
   %body
     #main
       %h1 Pusher Sample
+      %form#post-form
+        %input{:type => "text"}
+        %input{:type => "submit"}
+      #content
